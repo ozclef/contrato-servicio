@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Servicios técnicos — Contrato y Formulario</title>
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc}
+    body{font-family:Inter, system-ui, sans-serif;background:linear-gradient(180deg,#071126 0%,#0b1220 100%);color:#e6eef6;margin:0;padding:24px}
+    .wrap{max-width:980px;margin:0 auto}
+    header{display:flex;gap:16px;align-items:center}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:20px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    section h2{margin-top:0}
+    small{color:var(--muted)}
+    .service{margin:10px 0;padding:10px;border-left:4px solid rgba(125,211,252,0.15)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;background:linear-gradient(90deg,#0369a1,#0891b2);color:white;text-decoration:none}
+    .muted{color:var(--muted)}
+    form label{display:block;margin-top:10px}
+    input,select,textarea{width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    footer{margin-top:28px;color:var(--muted);font-size:13px}
+    .contract{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;max-height:260px;overflow:auto}
+    .warning{color:#ffd7d7;background:#3b1111;padding:8px;border-radius:8px}
+    .check{display:flex;gap:8px;align-items:center;margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Servicios técnicos — OzClef / Bious</h1>
+        <p class="lead">Transparencia, ética y servicios reales. Aquí explico qué hago, qué no, y cómo cobro.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card">
+        <section>
+          <h2>Resumen rápido (léelo antes de contratar)</h2>
+          <p class="muted">Trabajo con instalaciones, configuración de TV y laptop, vinculación de cuentas, optimización y soporte. No uso ni instalo software pirateado. No uso KMS ni cracks. Si la licencia es necesaria, pido claves oficiales o recomiendo compra.</p>
+        </section>
+
+        <section>
+          <h2>Servicios</h2>
+          <div class="service">
+            <strong>Vinculación TV ↔ Laptop</strong>
+            <div class="muted">Instalo apps oficiales, configuro streaming, optimizo red local (Wi‑Fi). No almaceno ni reparto contraseñas. Entrego guía para que el cliente cambie credenciales.</div>
+          </div>
+          <div class="service">
+            <strong>Configuración y optimización</strong>
+            <div class="muted">Limpieza de procesos, configuración de arranque, ajustes de navegador, recomendación de backups en la nube (ej: Terabox). No recomiendo discos duros usados o inseguros si hay alternativas cloud.</div>
+          </div>
+          <div class="service">
+            <strong>Instalación de software</strong>
+            <div class="muted">Instalo únicamente software original y oficial. Si el cliente tiene licencia válida, la uso; si no, doy opciones oficiales de compra.</div>
+          </div>
+          <div class="service">
+            <strong>Paquetes y soporte</strong>
+            <div class="muted">Soporte puntual (visita única) o suscripción mensual (soporte remoto + 1 visita). Facturación automática disponible.</div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Por qué NO uso KMS ni software pirata</h2>
+          <div class="warning">KMS y cracks ponen en riesgo sistemas: malware, incompatibilidades, problemas legales y pérdida de garantía. Yo trabajo con licencias originales o soluciones libres y seguras.</div>
+        </section>
+
+        <section>
+          <h2>Contratos y formulario</h2>
+          <p class="muted">Al aceptar y enviar el formulario, el cliente confirma haber leído el <a href="#contrato">contrato</a> y autoriza el servicio. Esto sirve como comprobante básico y acuerdo de trabajo.</p>
+
+          <div class="contract" id="contrato">
+            <h3>Contrato de prestación de servicios (resumen)</h3>
+            <p><strong>Partes:</strong> Técnico (OzClef / Bious) y Cliente (nombre en formulario).</p>
+            <p><strong>Alcance:</strong> Servicios descritos en el formulario. Cualquier trabajo adicional se cotiza aparte.</p>
+            <p><strong>Exclusiones:</strong> No se instala software pirata ni se realizan acciones que vulneren licencias.</p>
+            <p><strong>Responsabilidad:</strong> El técnico responde por la configuración entregada. No se responsabiliza por fallos preexistentes de hardware o datos no respaldados por el cliente.</p>
+            <p><strong>Pago:</strong> Se puede pagar con tarjeta, OXXO (vía Stripe) o transferencia. Pagos en efectivo solo si se acuerda y se factura.</p>
+            <p><strong>Cancelación:</strong> El cliente puede cancelar con 24h de antelación sin penalización. Cancelaciones el mismo día pueden implicar tarifa mínima por desplazamiento.</p>
+            <p><em>Este texto es un resumen. El documento formal será enviado como PDF si el servicio se confirma.</em></p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Preguntas frecuentes</h2>
+          <p><strong>¿Cobras por visita?</strong> Sí. Cobro tarifa base por desplazamiento y tiempo estimado. Véase el formulario para precios actuales.</p>
+          <p><strong>¿Puedo pagar en efectivo?</strong> Sí, con OXXO o en efectivo si lo acordamos. OXXO se procesa vía Stripe y queda registrada.</p>
+          <p><strong>¿Guardas mis contraseñas?</strong> No. Creo cuentas o las configuro y recomiendo que el cliente cambie la contraseña al terminar.</p>
+        </section>
+
+      </main>
+
+      <aside class="card">
+        <h2>Formulario — Solicita el servicio</h2>
+        <form id="serviceForm" action="/submit" method="post">
+          <label>Nombre completo<input type="text" name="name" required></label>
+          <label>Correo electrónico<input type="email" name="email" required></label>
+          <label>Teléfono<input type="tel" name="phone"></label>
+          <label>Domicilio (si aplica)<input type="text" name="address"></label>
+          <label>Servicio solicitado
+            <select name="service">
+              <option>Vinculación TV ↔ Laptop</option>
+              <option>Optimización y limpieza</option>
+              <option>Instalación de software oficial</option>
+              <option>Soporte mensual</option>
+              <option>Otro (describir en comentario)</option>
+            </select>
+          </label>
+          <label>Comentarios / detalles<textarea name="details" rows="4"></textarea></label>
+
+          <div class="check">
+            <input type="checkbox" id="accept" name="accept" required>
+            <label for="accept">He leído el <a href="#contrato">contrato de servicio</a> y acepto las condiciones.</label>
+          </div>
+
+          <label>Forma de pago preferida
+            <select name="payment_method">
+              <option value="card">Tarjeta (Stripe)</option>
+              <option value="oxxo">OXXO (efectivo via Stripe)</option>
+              <option value="transfer">Transferencia bancaria</option>
+              <option value="cash">Efectivo en visita (acordar)</option>
+            </select>
+          </label>
+
+          <button class="btn" type="submit">Enviar solicitud</button>
+        </form>
+
+        <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+
+        <h3>Pago con Stripe (nota técnica)</h3>
+        <p class="muted">Aquí explicar brevemente al cliente qué es Stripe y OXXO:</p>
+        <ul class="muted">
+          <li><strong>Stripe:</strong> Servicio que procesa pagos con tarjeta y genera facturas.</li>
+          <li><strong>OXXO Pay:</strong> Permite pagar en efectivo en tiendas OXXO; el pago se refleja y queda registrado en la plataforma.</li>
+          <li><strong>Facturación:</strong> Si necesitas factura fiscal, indícalo en el formulario y la generaré vía Stripe/Factura electrónica (si aplica).</li>
+        </ul>
+
+        <hr style="margin:14px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)">
+        <p class="muted"><strong>Declaración de ética:</strong> No uso KMS ni software pirateado. Trabajo con soluciones originales y seguras. Si el cliente solicita software ilegal, me reservo el derecho de no realizar el servicio.</p>
+      </aside>
+    </div>
+
+    <footer>
+      <p>¿Quieres PDF listo para el flujo de Stripe (checkout y OXXO)?.</p>
+    </footer>
+  </div>
+
+  <!-- NOTAS TÉCNICAS (para desarrollador):
+       - Conectar el formulario a tu backend en /submit y validar "accept".
+       - Para integrar Stripe Checkout: incluye el SDK de Stripe y crea sesiones en el servidor.
+       - Para OXXO: habilita OXXO en tu cuenta Stripe y crea sesiones con payment_method_types = ['oxxo'].
+       - No incluyo keys ni scripts automáticamente; agrégalos en tu entorno seguro.
+  -->
+</body>
+</html>
