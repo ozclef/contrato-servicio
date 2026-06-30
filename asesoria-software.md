@@ -1,3 +1,6 @@
+## ASESORÍA POLITICAS Y LEYES SOBRE USO DE SOFTWARE
+
+
 sí, **sobre lo mismo**, y lo dejamos **bien aterrizado**, usable tal cual para copiar/pegar en chats, WhatsApp o post.
 Voy a darte **la lista de precios + cotizaciones** y luego **el bloque PC Gamer** ya adaptado, sin humo y con ética (muy tú).
 
