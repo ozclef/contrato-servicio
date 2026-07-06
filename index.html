@@ -7,92 +7,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>CONTRATO servicio Oscar CD</title>
-<link rel="stylesheet" href="/css/style.css">
- <style>
-	 
-	 /* div iframe {width:90%;}  */
+<link rel="stylesheet" href="css/style.css">
 
-	  
-    :root {
-  --bg: #0b0e14;
-  --card:#121621;
-  --text:#eef3ff;
-  --muted:#9aa3c2;
-  --accent:#4f46e5;
-  --accent2:#fbbf24;
-  --radius:14px;
-}
-
-:root.light {
-  --bg:#f3f4f6;
-  --card:white;
-  --text:#1f2937;
-  --muted:#6b7280;
-}
-
-*{box-sizing:border-box;font-family:Inter,system-ui}
-body{margin:0;background:var(--bg);color:var(--text);transition:.25s}
-
-header{
-  display:flex;justify-content:space-between;
-  padding:16px;align-items:center;
-  background:var(--card);position:sticky;top:0;z-index:10
-}
-nav a{
-  margin-left:12px;text-decoration:none;color:var(--muted);
-}
-.btn{
-  background:var(--accent);border-radius:var(--radius);
-  color:white;padding:6px 12px;text-decoration:none;
-}
-.container{max-width:1100px;margin:auto;padding:16px;}
-
-.profile-pic{
-  width:110px;height:110px;border-radius:var(--radius);
-  object-fit:cover;border:3px solid rgba(255,255,255,.1)
-}
-.cover{
-  width:100%;border-radius:var(--radius);height:180px;
-  background-size:cover;background-position:center;margin-bottom:12px
-}
-.card{
-  background:var(--card);padding:16px;border-radius:var(--radius);
-  margin-bottom:16px;
-}
-.feed-item{
-  display:flex;gap:12px;padding:10px 0;
-  border-bottom:1px solid rgba(255,255,255,.05)
-}
-.thumb{width:120px;height:80px;object-fit:cover;border-radius:8px}
-
-	    header {      position: fixed;      top: 0;      left: 0;      right: 0;      background: var(--card);      padding: 12px 24px;      display: flex;      justify-content: space-between;      align-items: center;      z-index: 1000;    }
-    header h1 {      margin: 0;      font-size: 18px;      color: var(--accent);    }
-    nav a {      margin-left: 16px;      color: var(--muted);      text-decoration: none;      font-weight: 500;    }
-        .layout {      display: grid;      grid-template-columns: 220px 1fr 220px;      gap: 18px;      padding: 100px 24px 24px;    }
-    aside {      background: var(--card);      padding: 12px;      border-radius: 8px;    }
-        .layout {      display: grid;      grid-template-columns: 220px 1fr 220px;      gap: 18px;      padding: 100px 24px 24px;    }
-    aside {      background: var(--card);      padding: 12px;      border-radius: 8px;    }
-    .perfil {      background: var(--card);      border-radius: 12px;      overflow: hidden;    }
-    .portada {      height: 180px;      background: url('https://avatars.githubusercontent.com/u/212662790?v=4') center/cover;      position: relative;    }
-    .foto-perfil {      position: absolute;      bottom: -40px;      left: 24px;
-	 width: 80px;      height: 80px;      border-radius: 50%;      border: 4px solid var(--card);    
-	 /*background: url('https://i.imgur.com/1X1X1X1.jpg') center/cover;	*/ 
-	 background: url('https://avatars.githubusercontent.com/u/227050307?v=4') center/cover;    }
-    .info {      padding: 60px 24px 24px;    }
-    .info h2 {      margin: 0;      font-size: 22px;    }
-    .info p {      margin: 6px 0;      color: var(--muted);    }
-    .datos {      margin-top: 12px;      display: grid;      grid-template-columns: 1fr 1fr;      gap: 12px;    }
-    .dato {      background: rgba(255,255,255,0.03);      padding: 10px;      border-radius: 8px;      font-size: 14px;    }
-      a {  color:white;      }
-	  
-    @media (max-width: 768px) {
-      .layout {        grid-template-columns: 1fr;      }
-    /*  aside {        display: none;      } */
-      .datos {        grid-template-columns: 1fr;      }
-    }
-
-	  
-  </style>
 
 </head>
 <body>
@@ -135,7 +51,6 @@ nav a{
 
         </div>
       </div>
-  </div>
 <div id="app"></div>
 
 
@@ -262,76 +177,7 @@ nav a{
 	 <script src="js/app.js" ></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-<script>
-function generarTicket() {
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const details = document.getElementById('details').value;
-
-  const services = document.querySelectorAll('.serviceOpt:checked');
-  if (services.length === 0) {
-    alert("Selecciona al menos un servicio");
-    return;
-  }
-
-  let total = 0;
-  let lista = '';
-
-  services.forEach(s => {
-    const [nombre, precio] = s.value.split('|');
-    total += Number(precio);
-    lista += `- ${nombre} ($${precio})\n`;
-  });
-
-  const ticket =
-`SOLICITUD DE SERVICIO — BIO-US / Universe City
-
-Cliente: ${name}
-Email: ${email}
-Teléfono: ${phone}
-
-Servicios solicitados:
-${lista}
-Total estimado: $${total} MXN
-
-Comentarios:
-${details || 'Ninguno'}
-
-Condiciones:
-• Software original
-• Sin KMS ni cracks
-• Trabajo ético y documentado
-
-Fecha: ${new Date().toLocaleString()}
-`;
-
-  document.getElementById('ticketText').textContent = ticket;
-  document.getElementById('ticket').style.display = 'block';
-
-  // Gmail
-  const subject = encodeURIComponent("Solicitud de servicio técnico");
-  const body = encodeURIComponent(ticket);
-  document.getElementById('gmailLink').href =
-    `mailto:TUEMAIL@gmail.com?subject=${subject}&body=${body}`;
-
-  // WhatsApp
-  document.getElementById('waLink').href =
-    `https://wa.me/52TUNUMERO?text=${body}`;
-}
-
-function generarPDF() {
-  const { jsPDF } = window.jspdf;
-  const pdf = new jsPDF();
-  const text = document.getElementById('ticketText').textContent;
-
-  pdf.setFont("courier");
-  pdf.setFontSize(10);
-  pdf.text(text, 10, 10, { maxWidth: 190 });
-
-  pdf.save("solicitud_servicio_BIOUS.pdf");
-}
-</script>
+<script src="js/ticket.js"></script>
 
 </body>
 </html>
