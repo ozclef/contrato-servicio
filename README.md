@@ -16,10 +16,7 @@ ozclef - bious -- contrato profesional
 | Sitio institucional con backend   |      $10,000–20,000 MXN |
 | Sistema empresarial               | $20,000 MXN en adelante |
 
-
-<img width="608" height="562" alt="image" src="https://github.com/user-attachments/assets/2722a127-9d48-459f-bfb7-3077d046e619" />
-
-
+<img width="844" height="1841" alt="image" src="https://github.com/user-attachments/assets/183b042e-bc4d-4e14-b2ba-ae4b8136d5fd" />
 
 
 #  STRIPE.
