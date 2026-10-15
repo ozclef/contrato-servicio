@@ -1,4 +1,7 @@
-# contrato-servicio
+
+#  
+
+## contrato-servicio
 ozclef - bious -- contrato profesional
 
 
@@ -14,6 +17,7 @@ ozclef - bious -- contrato profesional
 | Sistema empresarial               | $20,000 MXN en adelante |
 
 
+<img width="608" height="562" alt="image" src="https://github.com/user-attachments/assets/2722a127-9d48-459f-bfb7-3077d046e619" />
 
 
 
@@ -49,6 +53,7 @@ El precio debe cubrir también el mantenimiento, las copias de seguridad, la seg
 
 Lo interesante es que puede vender primero una solución demostrable y después presupuestar la infraestructura que realmente necesite el negocio.
 
+<img width="920" height="553" alt="Screenshot_15-10-2026_3151_oscarcruzdiaz vercel app" src="https://github.com/user-attachments/assets/997fb630-4981-4ef1-a15a-65483250ec39" />
 
 
 Por ejemplo, un restaurante que te pide marketing, pero ni siquiera tiene un lugar físico, quizá no necesita un sistema empresarial completo. Puede necesitar una landing page, un catálogo, un formulario de pedidos o una presentación de su servicio.
