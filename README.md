@@ -1,5 +1,9 @@
 
-#  
+#  STRIPE pay 
+
+RFC + IRS
+
+https://ozclef.github.io/contrato-servicio/
 
 ## contrato-servicio
 ozclef - bious -- contrato profesional
